@@ -1,0 +1,191 @@
+/*general configs*/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-hover: hsl(245, 76%, 65%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --border-test: 1px solid red;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/*layouts*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+
+    min-height: 100vh;
+    background: var(--pale-blue) url(/images/pattern-background-desktop.svg) repeat-x;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+}
+
+.container-card,
+.container-summary,
+.payment-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.select-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    border-radius: 1rem;
+    background: var(--pale-blue);
+    font-size: 0.9em;
+}
+
+.annual-plan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background: var(--pale-blue) url(/images/pattern-background-mobile.svg) repeat-x;
+    }
+
+    .container-card {
+        margin: 1rem;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*design*/
+
+.container-card {
+    max-width: 24rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 1.2rem;
+}
+
+.container-summary {
+    margin: 1rem;
+}
+
+.container-image {
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.container-image img {
+    border-radius: 1.2rem 1.2rem 0 0;
+    max-width: 100%;
+}
+
+.order-summary {
+    text-align: center;
+}
+
+.order-summary h2 {
+    color: var(--dark-blue);
+    margin: 1rem auto;
+}
+
+.annual-plan span {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.change-plan a {
+    color: var(--bright-blue);
+}
+
+.change-plan a:hover {
+    text-decoration: none;
+}
+
+p {
+    color: var(--desaturated-blue);
+}
+
+.icon-music {
+    border: 2px solid var(--very-pale-blue);
+    border-radius: 50%;
+    width: 2.8rem;
+    margin-right: 1rem;
+}
+
+.icon-music img {
+    width: 100%;
+}
+
+.payment-buttons {
+    row-gap: 1rem;
+    width: 90%;
+}
+
+.payment-buttons button {
+    border-radius: 0.6rem;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.payment-buttons a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.payment-buttons button:first-child {
+    background-color: var(--bright-blue);
+    box-shadow: 0px 0px 1px 0px var(--bright-blue);
+
+}
+
+.payment-buttons button:first-child a {
+    color: var(--very-pale-blue);
+}
+
+.payment-buttons button:first-child:hover {
+    background-color: var(--bright-blue-hover);
+    cursor: pointer;
+}
+
+.payment-buttons button:last-child {
+    background-color: transparent;
+}
+
+.payment-buttons button:last-child a {
+    color: var(--desaturated-blue);
+}
+
+.payment-buttons button:last-child a:hover {
+    color: var(--dark-blue);
+}
+
+.attribution a {
+    text-decoration: none;
+}
