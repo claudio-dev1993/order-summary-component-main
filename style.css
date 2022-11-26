@@ -74,6 +74,10 @@ body {
         background: var(--pale-blue) url(/images/pattern-background-mobile.svg) repeat-x;
     }
 
+    .select-plan {
+        width: 95%;
+    }
+
     .container-card {
         margin: 1rem;
     }
@@ -81,6 +85,8 @@ body {
     .attribution {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
