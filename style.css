@@ -9,7 +9,6 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
-    --border-test: 1px solid red;
 
 }
 
@@ -17,10 +16,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 62, 5%;
 }
 
 /*layouts*/
@@ -40,7 +35,8 @@ body {
 
 .container-card,
 .container-summary,
-.payment-buttons {
+.payment-buttons,
+.icon-music {
     display: flex;
     flex-direction: column;
     justify-content: center;
